@@ -8,5 +8,9 @@
     ],
     "host_permissions": [
         "*://o2online.es/checkout/*"
-    ]
+    ],
+    "background": {
+        "service_worker": "service-worker.js",
+        "type": "module"
+    }
 }
