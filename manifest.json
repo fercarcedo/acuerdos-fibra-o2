@@ -4,6 +4,7 @@
     "description": "Esta extensión muestra en la web de O2 qué red de fibra utiliza en tu dirección (fibra directa de Movistar, Adamo u Orange)",
     "version": "1.0.0",
     "permissions": [
+        "scripting",
         "webRequest"
     ],
     "host_permissions": [
