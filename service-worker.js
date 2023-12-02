@@ -35,7 +35,7 @@ async function sendTextToTab(tabId, frameId, text) {
 }
 
 chrome.webRequest.onBeforeRequest.addListener(async (details) => {
-  if (details.originUrl.startsWith('http')) {
+  if ((details.initiator && details.initiator.startsWith('http')) || (details.originUrl && details.originUrl.startsWith('http'))) {
     await sendTextToTab(details.tabId, details.frameId, 'Cargando detalles...');
     const response = await fetch(details.url);
     const result = await response.json();
