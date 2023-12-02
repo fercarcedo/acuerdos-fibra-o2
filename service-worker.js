@@ -26,18 +26,21 @@ function displayFiberType(fiber_type_text) {
   }
 }
 
-chrome.webRequest.onCompleted.addListener(async (details) => {
-  if (details.initiator.startsWith('http')) {
-    console.log(JSON.stringify(details));
+async function sendTextToTab(tabId, frameId, text) {
+  await chrome.scripting.executeScript({
+    target: { tabId, frameIds: [frameId] },
+    func: displayFiberType,
+    args: [text]
+  });
+}
+
+chrome.webRequest.onBeforeRequest.addListener(async (details) => {
+  if (details.originUrl.startsWith('http')) {
+    await sendTextToTab(details.tabId, details.frameId, 'Cargando detalles...');
     const response = await fetch(details.url);
     const result = await response.json();
     if (result && result.optical_fiber) {
-      console.log(result.coverage_area_id);
-      await chrome.scripting.executeScript({
-        target: { tabId: details.tabId, frameIds: [details.frameId] },
-        func: displayFiberType,
-        args: [getFiberTypeText(result.coverage_area_id)]
-      });
+      await sendTextToTab(details.tabId, details.frameId, getFiberTypeText(result.coverage_area_id));
     }
   }
 },  { urls: ["*://o2online.es/api/coverage/telco/coverage/*"], types: ["xmlhttprequest"] });
