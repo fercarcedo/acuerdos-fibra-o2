@@ -1,7 +1,7 @@
 function getFiberTypeText(coverage_area_id) {
   switch (coverage_area_id) {
     case '501000':
-      return 'Fibra directa Movistar';
+      return 'Fibra propia (Movistar)';
     case '501005':
       return 'A través de Adamo';
     case '501006':
