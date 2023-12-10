@@ -17,7 +17,7 @@ function displayFiberType(fiber_type_text) {
   fiberTypeParagraph.style.fontSize = '16px';
   fiberTypeParagraph.style.color = '#000';
   fiberTypeParagraph.style.marginBottom = 0;
-  fiberTypeParagraph.innerHTML = fiber_type_text;
+  fiberTypeParagraph.textContent = fiber_type_text;
   const alreadyAddedElement = coverageResultContainer.querySelector('p.fiber-type-text');
   if (alreadyAddedElement) {
     coverageResultContainer.replaceChild(fiberTypeParagraph, alreadyAddedElement);
