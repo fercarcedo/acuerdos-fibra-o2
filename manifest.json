@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Acuerdos fibra O2",
     "description": "Esta extensión muestra en la web de O2 qué red de fibra utiliza en tu dirección (fibra directa de Movistar, Adamo u Orange)",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "permissions": [
         "scripting",
         "webRequest"
@@ -12,7 +12,12 @@
         "*://o2online.es/api/coverage/telco/coverage/*"
     ],
     "background": {
-        "service_worker": "service-worker.js",
+        "scripts": ["service-worker.js"],
         "type": "module"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "acuerdosfibrao2@fercarcedo"
+        }
     }
 }
