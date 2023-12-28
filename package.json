@@ -1,6 +1,6 @@
 {
   "name": "acuerdos-fibra-o2",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "scripts": {
     "build-firefox": "mkdir -p dist/firefox && cd dist/firefox && rm -rf ./* && cp ../../src/firefox/manifest.json . && cp ../../src/service-worker.js background-script.js && cp -r ../../src/icons . && zip -r acuerdosfibrao2-firefox.zip ./*",
     "build-chrome": "mkdir -p dist/chrome && cd dist/chrome && rm -rf ./* && cp ../../src/chrome/manifest.json . && cp ../../src/service-worker.js . && cp -r ../../src/icons . && zip -r acuerdosfibrao2-chrome.zip ./*"
