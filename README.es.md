@@ -2,8 +2,8 @@
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/fercarcedo/acuerdos-fibra-o2/blob/main/README.md)
 
-[![Chrome web store link](chromebadge.png)](https://chromewebstore.google.com/detail/acuerdos-fibra-o2/aacfgcicjaofeigkndomcdefggpigjkg)
-[![Firefox addons link](firefoxbadge.png)](https://addons.mozilla.org/es/firefox/addon/acuerdos-fibra-o2/)
+[![Chrome web store link](images/badges/chromebadge.png)](https://chromewebstore.google.com/detail/acuerdos-fibra-o2/aacfgcicjaofeigkndomcdefggpigjkg)
+[![Firefox addons link](images/badges/firefoxbadge.png)](https://addons.mozilla.org/es/firefox/addon/acuerdos-fibra-o2/)
 
 ## Descripción
 
@@ -11,7 +11,7 @@ Acuerdos fibra O2 es una extensión del navegador (disponible para Chrome y Fire
 
 Una vez instalada, simplemente comprueba cobertura en la web de O2 y si la comprobación es positiva aparecerá debajo el tipo de fibra:
 
-![Captura de pantalla mostrando cobertura a través de Adamo](extensionscreenshot.jpg)
+![Captura de pantalla mostrando cobertura a través de Adamo](images/screenshots/extensionscreenshot.jpg)
 
 ## Compilación
 

@@ -3,8 +3,8 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/fercarcedo/acuerdos-fibra-o2/blob/main/README.md)
 [![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/fercarcedo/acuerdos-fibra-o2/blob/main/README.es.md)
 
-[![Enlace a Chrome web store](chromebadge.png)](https://chromewebstore.google.com/detail/acuerdos-fibra-o2/aacfgcicjaofeigkndomcdefggpigjkg)
-[![Enlace a Firefox addons](firefoxbadge.png)](https://addons.mozilla.org/es/firefox/addon/acuerdos-fibra-o2/)
+[![Enlace a Chrome web store](images/badges/chromebadge.png)](https://chromewebstore.google.com/detail/acuerdos-fibra-o2/aacfgcicjaofeigkndomcdefggpigjkg)
+[![Enlace a Firefox addons](images/badges/firefoxbadge.png)](https://addons.mozilla.org/es/firefox/addon/acuerdos-fibra-o2/)
 
 ## Description
 
@@ -12,7 +12,7 @@ Acuerdos fibra O2 is a browser extension (available for both Chrome and Firefox,
 
 Once installed, simplify check coverage in the O2 website and if successful, the type of fiber will appear below:
 
-![Screenshot showing coverage via Adamo](extensionscreenshot.jpg)
+![Screenshot showing coverage via Adamo](images/screenshots/extensionscreenshot.jpg)
 
 ## Building
 
