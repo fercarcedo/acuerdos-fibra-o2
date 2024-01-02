@@ -1,4 +1,4 @@
-# acuerdos-fibra-o2
+# Acuerdos fibra O2
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/fercarcedo/acuerdos-fibra-o2/blob/main/README.md)
 [![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/fercarcedo/acuerdos-fibra-o2/blob/main/README.es.md)
