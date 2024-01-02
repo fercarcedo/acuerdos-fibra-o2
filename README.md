@@ -10,7 +10,7 @@
 
 Acuerdos fibra O2 is a browser extension (available for both Chrome and Firefox, including Firefox for Android) that allows the user to view which fiber network O2 uses (the flanker brand of the spanish operator Movistar) in the specified address (distinguishing between own fiber, via Adamo or via Orange).
 
-Once installed, simplify check coverage in the O2 website and if successful, the type of fiber will appear below:
+Once installed, simply check coverage in the O2 website and if successful, the type of fiber will appear below:
 
 ![Screenshot showing coverage via Adamo](images/screenshots/extensionscreenshot.jpg)
 
