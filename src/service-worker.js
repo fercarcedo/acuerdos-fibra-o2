@@ -34,10 +34,19 @@ async function sendTextToTab(tabId, frameId, text) {
   });
 }
 
+function convertURLToNotManual(urlString) {
+  const url = new URL(urlString);
+  const params = new URLSearchParams(url.search);
+  params.set('manual', false);
+  url.search = params;
+  const result = url.toString();
+  return result;
+}
+
 chrome.webRequest.onBeforeRequest.addListener(async (details) => {
   if ((details.initiator && details.initiator.startsWith('http')) || (details.originUrl && details.originUrl.startsWith('http'))) {
     await sendTextToTab(details.tabId, details.frameId, 'Cargando detalles...');
-    const response = await fetch(details.url);
+    const response = await fetch(convertURLToNotManual(details.url));
     const result = await response.json();
     if (result && result.optical_fiber) {
       await sendTextToTab(details.tabId, details.frameId, getFiberTypeText(result.coverage_area_id));
