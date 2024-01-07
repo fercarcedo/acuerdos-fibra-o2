@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Acuerdos fibra O2",
     "description": "Esta extensión muestra en la web de O2 qué red de fibra utiliza en tu dirección (fibra directa de Movistar, Adamo u Orange)",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "icons": {
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
